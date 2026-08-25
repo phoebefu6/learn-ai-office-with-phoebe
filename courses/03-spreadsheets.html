@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- social:start -->
+<meta name="description" content="Session 3 of 6. A number you cannot derive is a number you cannot defend. Microsoft's own documentation tells you not to use its spreadsheet AI function for calculations, and that is the best lesson in the course.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Learn with Phoebe">
+<meta property="og:title" content="Spreadsheets - learn ai office with phoebe">
+<meta property="og:description" content="Session 3 of 6. Ask for the formula, not the answer. The vendor's own docs forbid the obvious use, and the accuracy numbers explain why.">
+<meta property="og:url" content="https://phoebefu6.github.io/learn-ai-office-with-phoebe/courses/03-spreadsheets.html">
+<meta property="og:image" content="https://phoebefu6.github.io/learn-ai-office-with-phoebe/assets/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Spreadsheets - learn ai office with phoebe">
+<meta name="twitter:description" content="Session 3 of 6. Ask for the formula, not the answer. A number you cannot derive is a number you cannot defend.">
+<meta name="twitter:image" content="https://phoebefu6.github.io/learn-ai-office-with-phoebe/assets/og-cover.png">
+<!-- social:end -->
+<title>Session 3 · Spreadsheets - learn ai office with phoebe</title>
+<link rel="stylesheet" href="../assets/style.css?v=1">
+</head>
+<body>
+
+<div class="toolbar">
+  <div class="wrap">
+    <span class="crumb"><a href="../index.html">learn-ai-office-with-phoebe</a> / Session 3 of 6</span>
+    <button class="btn" id="toggle-all" type="button">Expand all</button>
+    <button class="btn primary" id="zoom-toggle" type="button">Projector zoom: off</button>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <div class="eyebrow">Learn AI Office with Phoebe · Session 3 of 6</div>
+    <h1>Show me your <span class="accent">working</span></h1>
+    <p class="sub">Halfway through the course, and here is the sentence the second half is built on: a number you cannot derive is a number you cannot defend. Tonight you stop asking a spreadsheet assistant for answers and start asking it for formulas, which sounds like a small change in wording and is actually the whole difference between a report you can stand behind in a meeting and a report you are quietly hoping nobody interrogates. On the way we read the most useful document in this entire course, which is Microsoft telling you not to use its own function for the thing you wanted it for.</p>
+    <div class="chip-row">
+      <span class="chip level">🟡 Medium</span>
+      <span class="chip audience">Anyone with a weekly report, an inbox and too many meetings</span>
+      <span class="chip audience">Excel or Google Sheets</span>
+      <span class="chip time">45 min</span>
+    </div>
+    <div class="agenda">
+      <span class="a1" style="flex:1">0-3 · Recap</span>
+      <span class="a2" style="flex:4">3-16 · What it does, and what its own docs forbid</span>
+      <span class="a3" style="flex:5">16-38 · Build-along: rebuild one real number</span>
+      <span class="a4" style="flex:1">38-45 · Q&amp;A</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ INTRO ============ -->
+  <section class="section" id="intro">
+    <div class="section-kicker">
+      <span class="klabel">Part 0</span>
+      <h2>Where the report is now</h2>
+    </div>
+    <p class="lede">Session 1 gave you the four-part ask and took the report from 170 minutes to 150. Session 2 gave you the slice and the omission audit and took it to <strong>137 minutes, 26 percent faster</strong>. Tonight is the formula rung: <strong>137 down to 128, which is 26 percent to 31 percent</strong>, and unlike the previous two it is not mainly about speed. It is about whether the thing you send out can survive a question.</p>
+
+    <div class="legend">
+      <span class="pill">🎫 Clear all three quiz questions to stamp your passport</span>
+      <span class="pill">Live = presented in the 45 minutes</span>
+      <span class="pill">Self-study = the full depth, after class</span>
+    </div>
+
+    <div class="callout win">
+      <p><strong>★ What you walk out with tonight.</strong> One real figure from your report rebuilt so the working is visible in the sheet, a spot-check habit that takes four minutes, and the ability to explain to a colleague exactly why the AI cell function is the wrong tool for a total, using the vendor's own documentation rather than your opinion.</p>
+    </div>
+
+    <details class="card" open>
+      <summary><span class="mode live">Live</span>The sentence tonight hangs on<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p class="lede"><strong>A number you cannot derive is a number you cannot defend.</strong></p>
+        <p>Think about the last time a figure in one of your reports was challenged. Not proved wrong, just questioned. Somebody said "where does that come from?" and the honest answer was a small pause, then a scroll, then "let me check and come back to you".</p>
+        <p>That pause is the entire cost of an undefendable number, and it is expensive in a way that never shows up on a productivity dashboard. It costs you the room's confidence for the next ten minutes, and it costs you the afternoon you then spend reconstructing something you already produced once.</p>
+        <p>An assistant that hands you a total makes that pause more likely, not less, because now the derivation happened somewhere you were not watching. An assistant that hands you a formula makes it impossible, because the derivation is sitting in the cell where anybody can read it, including you, in three weeks, when you have forgotten everything.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Halfway through: what the report has gained<span class="mini">2 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <table class="clean">
+          <tr><th>Session</th><th>What your report gained</th><th>Task ladder</th></tr>
+          <tr><td>1 · done</td><td>The four-part ask: material, reader, shape, honesty clause</td><td>170 to 150 min, 8% to 19%</td></tr>
+          <tr><td>2 · done</td><td>The written half, sliced and audited for omission</td><td>150 to 137 min, 19% to 26%</td></tr>
+          <tr><td>3 · tonight</td><td>The numbers, with working you can point at</td><td>137 to 128 min, 26% to 31%</td></tr>
+          <tr><td>4</td><td>Inbox and meeting notes feeding it, without costing you trust</td><td>held at 31%</td></tr>
+          <tr><td>5</td><td>Assembled end to end, every figure traceable</td><td>128 to 122 min, 31% to 34%</td></tr>
+          <tr><td>6</td><td>Saved, repeatable, honest about what you never automate</td><td>122 to 111 min, 34% to 40%</td></tr>
+        </table>
+        <p>Notice that tonight and session 5 are the two rungs with the smallest time savings and the largest effect on whether anyone trusts the output. That is not a coincidence. Checking is the part that costs minutes and buys credibility.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 1 ============ -->
+  <section class="section" id="part-1">
+    <div class="section-kicker">
+      <span class="klabel">Part 1 · covers what it genuinely does</span>
+      <h2>What these assistants really do in a spreadsheet now</h2>
+      <span class="tag concept">5 min live</span>
+    </div>
+    <p class="lede">Start with the capability, honestly, because this is genuinely more than it was and dismissing it makes you look uninformed. Both products now edit your sheet rather than just talking about it.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Overlapping capabilities of Copilot in Excel and Gemini in Sheets, sharing formulas charts and pivots while differing in the surrounding features">
+        <style>
+          .o3aS { font: 700 12px Inter, sans-serif; fill: #1C1917; }
+          .o3aX { font: 400 11.5px Inter, sans-serif; fill: #6B6257; }
+          .o3aI { font: 800 12px Inter, sans-serif; fill: #78350F; }
+          .o3aN { font: 400 12px Inter, sans-serif; fill: #6B6257; }
+        </style>
+        <circle cx="370" cy="150" r="118" fill="#0369A1" fill-opacity=".18" stroke="#0369A1" stroke-width="1.5"/>
+        <circle cx="510" cy="150" r="118" fill="#B45309" fill-opacity=".22" stroke="#B45309" stroke-width="1.5"/>
+        <text class="o3aS" x="238" y="150" text-anchor="end">Copilot in Excel</text>
+        <text class="o3aX" x="238" y="168" text-anchor="end">no edit mode on iPad</text>
+        <text class="o3aS" x="642" y="150">Gemini in Sheets</text>
+        <text class="o3aX" x="642" y="168">native Sheets files</text>
+        <text class="o3aX" x="300" y="112" text-anchor="middle">cell edits</text><text class="o3aX" x="300" y="150" text-anchor="middle">formatting</text>
+        <text class="o3aX" x="300" y="188" text-anchor="middle">web fetch</text><text class="o3aX" x="578" y="112" text-anchor="middle">dropdowns</text>
+        <text class="o3aX" x="578" y="150" text-anchor="middle">sort, filter</text><text class="o3aX" x="578" y="188" text-anchor="middle">whole sheet</text>
+        <text class="o3aI" x="440" y="136" text-anchor="middle">formulas</text><text class="o3aI" x="440" y="158" text-anchor="middle">charts</text>
+        <text class="o3aI" x="440" y="180" text-anchor="middle">pivots</text>
+        <text class="o3aN" x="60" y="286">Both write formulas, charts and pivots. The gotchas are where they part company.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the shared middle is the part you will actually use every week</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>The capability list, and the gotchas that bite<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p><strong>Copilot in Excel</strong> adds, renames and deletes worksheets, edits cells and ranges, applies conditional formatting and data validation, writes formulas that reach across sheets, builds charts and PivotTables, and fetches from the web with citations.</p>
+        <p><strong>Gemini in Sheets</strong> builds tables, writes formulas, runs analysis, makes charts and pivot tables, adds dropdowns, sorts and filters, and will construct a whole sheet from a plan that you approve before it runs.</p>
+        <p>Now the three gotchas nobody mentions in the demo video:</p>
+        <ul>
+          <li><strong>Platform.</strong> Copilot's edit mode is Windows, Mac and web only. On iPad and iPhone you get <strong>chat mode only</strong>. If your habit is reviewing numbers on a tablet on the train, the thing you saw demonstrated is not the thing you have.</li>
+          <li><strong>Calculation Options must be set to Automatic</strong> for editing to work. If you are one of those people who set a heavy workbook to Manual years ago and forgot, this will look like the feature is broken.</li>
+          <li><strong>File format.</strong> Gemini in Sheets works best on native Sheets files, so an .xlsx has to be converted first. On the Microsoft side, a workbook saved as Strict Open XML has to be resaved as .xlsx.</li>
+        </ul>
+        <div class="callout tip">
+          <p>Check your edition before you promise anything to your team. On Google Workspace, <strong>Business Starter has no access</strong> to the Sheets AI function, the sheet build and edit features, or match-style in Docs. Standard allows 5,000 AI function calls a month and Plus allows 25,000.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode self">Self-study</span>Two more surfaces worth knowing exist<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p><strong>Agent Mode</strong> in Word, Excel and PowerPoint went generally available on 22 April 2026 and does multi-step actions in place, on desktop and mobile. A detail worth carrying because it surprises people: Agent Mode runs on OpenAI reasoning models, while Office Agent runs on Anthropic models. Same menu, different engines underneath.</p>
+        <p>The <strong>Analyst</strong> agent, currently in the early-access Frontier program, "can run Python ... and you can view the code it's running in real time". Read that capability through tonight's lens. The valuable half of that sentence is not the Python. It is that you can watch the code, which is exactly the show-your-working principle, shipped as a product feature.</p>
+        <p>And on the Anthropic side, <strong>Claude for Excel</strong> does workbook question and answer with cell-level citations and can adjust assumptions while keeping formula relationships intact. It needs Pro, Max, Team or Enterprise, runs on web plus recent Windows and Mac builds, and is <strong>not</strong> available on the 2016 or 2019 perpetual versions, on iPad, or on Android. Data tables and macros are unsupported.</p>
+        <p>Cell-level citations are the same idea again, from a third vendor. When three companies independently ship "here is where this came from", that is the market agreeing with the thesis of this session.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 2 ============ -->
+  <section class="section" id="part-2">
+    <div class="section-kicker">
+      <span class="klabel">Part 2 · covers the vendor's own limits</span>
+      <h2>The best document in this course is Microsoft telling you not to</h2>
+      <span class="tag concept">6 min live</span>
+    </div>
+    <p class="lede">There is now a real worksheet function, <span class="mono">=COPILOT()</span>, that you type into a cell like any other. Google has its own equivalent in <span class="mono">=AI()</span>. Both are genuinely useful. Both come with vendor documentation that rules out the first thing almost everyone tries.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A decision path for whether a task belongs in an AI cell function, sending numbers lookups and compliance to native formulas and leaving wording and tagging to the AI function">
+        <style>
+          .o3bR { font: 700 13px Inter, sans-serif; fill: #78350F; }
+          .o3bH { font: 700 12px Inter, sans-serif; }
+          .o3bB { font: 400 12px Inter, sans-serif; fill: #1C1917; }
+          .o3bN { font: 400 12px Inter, sans-serif; fill: #6B6257; }
+        </style>
+        <rect x="300" y="24" width="280" height="42" rx="10" fill="#FFFBEB" stroke="#B45309" stroke-width="1.5"/>
+        <text class="o3bR" x="440" y="51" text-anchor="middle">Put it in an AI cell function?</text>
+        <line x1="440" y1="66" x2="440" y2="90" stroke="#D6CFC5" stroke-width="1.5"/><line x1="210" y1="90" x2="670" y2="90" stroke="#D6CFC5" stroke-width="1.5"/>
+        <line x1="210" y1="90" x2="210" y2="110" stroke="#D6CFC5" stroke-width="1.5"/><line x1="670" y1="90" x2="670" y2="110" stroke="#D6CFC5" stroke-width="1.5"/>
+        <rect x="60" y="110" width="300" height="44" rx="10" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="1.5"/>
+        <text class="o3bH" x="210" y="138" text-anchor="middle" fill="#991B1B">Numbers, lookups, rules</text>
+        <rect x="520" y="110" width="300" height="44" rx="10" fill="#FFFBEB" stroke="#B45309" stroke-width="1.5"/>
+        <text class="o3bH" x="670" y="138" text-anchor="middle" fill="#78350F">Wording, tagging, sentiment</text>
+        <line x1="210" y1="154" x2="210" y2="178" stroke="#D6CFC5" stroke-width="1.5"/><line x1="670" y1="154" x2="670" y2="178" stroke="#D6CFC5" stroke-width="1.5"/>
+        <rect x="60" y="178" width="300" height="44" rx="10" fill="#FFFBEB" stroke="#EAE4DB" stroke-width="1.5"/>
+        <text class="o3bB" x="210" y="206" text-anchor="middle">The vendor says do not</text>
+        <rect x="520" y="178" width="300" height="44" rx="10" fill="#FFFBEB" stroke="#EAE4DB" stroke-width="1.5"/>
+        <text class="o3bB" x="670" y="206" text-anchor="middle">This is what it is for</text>
+        <line x1="210" y1="222" x2="210" y2="246" stroke="#D6CFC5" stroke-width="1.5"/><line x1="670" y1="222" x2="670" y2="246" stroke="#D6CFC5" stroke-width="1.5"/>
+        <rect x="60" y="246" width="300" height="44" rx="10" fill="#FCD34D"/>
+        <text class="o3bH" x="210" y="274" text-anchor="middle" fill="#1C1917">Use SUM, XLOOKUP, math</text>
+        <rect x="520" y="246" width="300" height="44" rx="10" fill="#E8F3FA" stroke="#0369A1" stroke-width="1.5"/>
+        <text class="o3bH" x="670" y="274" text-anchor="middle" fill="#062A43">Expect it to change later</text>
+        <text class="o3bN" x="60" y="318">Microsoft's own page rules out calculations, lookups, and compliance work.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - the left path is not a warning about quality, it is the vendor naming the wrong tool</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>What the =COPILOT() documentation actually says<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Straight from Microsoft's own function reference. Read these as a group, because the pattern is the lesson.</p>
+        <ul>
+          <li><strong>"COPILOT uses AI and can give incorrect responses"</strong>, stated on the page for the function itself.</li>
+          <li>Avoid it for <strong>"Numerical calculations"</strong>. Use native formulas <strong>"for any task requiring accuracy or reproducibility"</strong>.</li>
+          <li>Avoid it for <strong>lookups</strong>. Use XLOOKUP, which is deterministic and which you already know.</li>
+          <li>Avoid it for <strong>legal, regulatory or compliance</strong> tasks.</li>
+          <li><strong>"Formula results may change over time, even with the same arguments."</strong></li>
+        </ul>
+        <p>Stop on that last one, because it breaks something people assume is unbreakable. A spreadsheet's core promise is that the same inputs give the same output, forever. That is why anybody trusts a workbook at all. A cell that may quietly return something different next quarter is a different kind of object living in the same grid, and it looks identical to its neighbours.</p>
+        <p>Two more practical limits: a cap of <strong>100 calculations per 10 minutes</strong>, after which you get a connection error, and the function <strong>cannot see the rest of your workbook</strong>. It knows the prompt and the ranges you hand it, and nothing else.</p>
+      </div>
+    </details>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>Google's =AI() has the same shape of limits<span class="mini">3 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p>Different company, same physics:</p>
+        <ul>
+          <li><strong>Text only.</strong> It generates, summarizes, categorizes and scores sentiment. It is not a calculator either.</li>
+          <li>Only the <strong>first 350 selected cells</strong> generate per batch. Select two thousand rows and most of them quietly do nothing.</li>
+          <li>It <strong>cannot see the whole spreadsheet</strong> or other Drive files, exactly like the Microsoft function.</li>
+          <li>It <strong>cannot be nested inside IF</strong>, so the clever conditional you were about to build does not work.</li>
+          <li>And the one that costs people real work: it <strong>cannot be undone</strong>.</li>
+        </ul>
+        <div class="callout example">
+          <span class="ex-pill">Real world</span>
+          <p>Read the two pages side by side and the message is unmistakable. Both vendors shipped a cell-level AI function, and both then published documentation saying: not for numbers, not for lookups, it cannot see your workbook, and the answer may not be stable. <strong>They are telling you what it is for.</strong> It is for the text work you used to do by hand in a column: tagging free-text feedback, drafting the comment field, standardising messy category names. That is a real job and it saves real time. It is just not the job of producing the number at the bottom of your report.</p>
+        </div>
+      </div>
+    </details>
+
+    <div class="prompt-box bad">
+      <span class="label">What almost everyone types first</span>
+=COPILOT("what was our average monthly revenue in H1?", A2:B7)
+    </div>
+
+    <div class="prompt-box good">
+      <span class="label">The same job, done in the tool built for it</span>
+=AVERAGE(monthly_rev)
+
+Use the AI function for the column beside it instead:
+=COPILOT("in three words, why did this month move?", C2:F2)
+
+And for the flag, plain logic beats a prompt every time:
+=IF(B2 &lt; 0.9 * C2, "missed target", "on plan")
+    </div>
+
+    <p>The second block is not more conservative, it is more correct. The average is deterministic and it will be the same number in March. The three-word explanation is language work, which is what the AI function is genuinely good at. Profit &amp; loss lines are not the place to experiment.</p>
+  </section>
+
+  <!-- ============ PART 3 ============ -->
+  <section class="section" id="part-3">
+    <div class="section-kicker">
+      <span class="klabel">Part 3 · covers the accuracy number</span>
+      <h2>There is a number for this, and it needs handling carefully</h2>
+      <span class="tag concept">4 min live</span>
+    </div>
+    <p class="lede">People ask "but how accurate is it, really" and deserve a real answer rather than a shrug. There is one. It comes with a caveat that matters as much as the figure.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Human experts at 71.33 percent on SpreadsheetBench compared with Microsoft's reported 57.2 percent for Agent Mode in Excel, measured by two different evaluators">
+        <style>
+          .o3cL { font: 600 12px Inter, sans-serif; fill: #1C1917; }
+          .o3cV { font: 800 12px Inter, sans-serif; fill: #fff; }
+          .o3cS { font: 400 12px Inter, sans-serif; fill: #6B6257; }
+          .o3cN { font: 400 12px Inter, sans-serif; fill: #6B6257; }
+        </style>
+        <text class="o3cL" x="240" y="110" text-anchor="end">Human experts</text>
+        <rect x="260" y="90" width="399" height="34" rx="6" fill="#B45309"/>
+        <text class="o3cV" x="274" y="112">71.33%</text>
+        <text class="o3cL" x="240" y="170" text-anchor="end">Agent Mode in Excel</text>
+        <rect x="260" y="150" width="320" height="34" rx="6" fill="#0369A1"/>
+        <text class="o3cV" x="274" y="172">57.2%</text>
+        <text class="o3cS" x="260" y="212">SpreadsheetBench, full task set. The bar above is the ceiling humans hit.</text>
+        <text class="o3cS" x="260" y="234">Neither figure is a pass mark. Both leave plenty of room to be wrong.</text>
+        <text class="o3cN" x="60" y="276">Two different evaluators, and Microsoft evaluated its own product. Read the gap, not a ranking.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - good enough to be genuinely useful, and good enough to be dangerous unchecked</figcaption>
+    </figure>
+
+    <details class="card">
+      <summary><span class="mode live">Live</span>How to quote these two figures without misleading anyone<span class="mini">4 min</span><span class="caret">▶</span></summary>
+      <div class="body">
+        <p><strong>SpreadsheetBench</strong> reports human experts at <strong>71.33 percent</strong> overall. Microsoft reports <strong>Agent Mode in Excel at 57.2 percent</strong> on the full task set.</p>
+        <p>Now the part that has to be said out loud every single time you use these numbers: <strong>they come from two different evaluators, and Microsoft evaluated its own product.</strong> Putting them next to each other is useful for scale and it is not a head-to-head result. If you put them on a slide as a clean comparison, you are doing the thing this course keeps warning about.</p>
+        <p>Look at the human bar for a second. Skilled people, working carefully on a benchmark of real spreadsheet tasks, came in at 71.33 percent. Spreadsheet work is hard, and part of what these figures measure is the difficulty of the task rather than the failings of the tool.</p>
+        <div class="callout tip">
+          <p><strong>The lesson is not "it is bad".</strong> Either figure is high enough that the output usually looks right, which is precisely what makes it dangerous without a check. A tool that failed obviously would be safe. A tool that succeeds most of the time and fails silently is the one that needs a spot-check habit, and that is what the build-along installs.</p>
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ PART 4 ============ -->
+  <section class="section" id="part-4">
+    <div class="section-kicker">
+      <span class="klabel">Part 4 · corrects stale advice</span>
+      <h2>Two things you have been told that are no longer true</h2>
+      <span class="tag concept">2 min live</span>
+    </div>
+    <p class="lede">This field moves fast enough that confident advice goes off. Two corrections, both of which will make you look well informed in a meeting this month.</p>
+
+    <table class="clean">
+      <tr><th>What gets repeated</th><th>The current position</th></tr>
+      <tr><td>"Copilot in Excel needs AutoSave on and the file in OneDrive"</td><td>Not true now. Microsoft's own wording: "Copilot in Excel runs in workbooks with autosave enabled or disabled." If you avoided it because of this, the reason is gone</td></tr>
+      <tr><td>"Copilot in Excel handles up to 2 million cells"</td><td>Widely repeated and it appears on no live Microsoft page. This course does not teach a number, because a made-up threshold tells you exactly when to stop being careful</td></tr>
+    </table>
+
+    <p>The second one is the more interesting failure. A specific figure travels much further than a vague warning, gets quoted in a deck, and eventually somebody builds a process on it. If you cannot point at the page it lives on, say "I do not have a verified number" instead. It is a better answer and it stays true.</p>
+  </section>
+
+  <!-- ============ BUILD-ALONG ============ -->
+  <section class="section" id="demo-3">
+    <div class="section-kicker">
+      <span class="klabel">Build-along</span>
+      <h2>Rebuild one real number so the working is visible</h2>
+      <span class="tag demo">★ 22 min · everyone builds</span>
+    </div>
+    <p class="lede">Open the sheet behind your weekly report and find the figure you brought as homework. The one you copy from somewhere, or that a formula produces and you have never opened. We are going to make it derivable.</p>
+
+    <figure class="zoomable">
+      <svg viewBox="0 0 880 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Asking for the answer returns a bare number with no trail, while asking for the formula puts the derivation in the cell where it can be read">
+        <style>
+          .o3dH { font: 800 13px Inter, sans-serif; }
+          .o3dB { font: 400 12px Inter, sans-serif; fill: #1C1917; }
+          .o3dM { font: 700 12px "SF Mono", ui-monospace, Menlo, monospace; fill: #1C1917; }
+          .o3dF { font: 800 12px Inter, sans-serif; }
+          .o3dN { font: 400 12px Inter, sans-serif; fill: #6B6257; }
+        </style>
+        <rect x="40" y="50" width="390" height="180" rx="12" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="1.5"/>
+        <text class="o3dH" x="58" y="84" fill="#991B1B">You asked for the answer</text>
+        <text class="o3dM" x="58" y="116">45,142</text>
+        <text class="o3dB" x="58" y="142">No cells named, no trail, no formula</text>
+        <text class="o3dB" x="58" y="164">In March you cannot reproduce it</text>
+        <text class="o3dF" x="58" y="200" fill="#991B1B">One question and you are scrolling</text>
+        <rect x="450" y="50" width="390" height="180" rx="12" fill="#FFFBEB" stroke="#B45309" stroke-width="1.5"/>
+        <text class="o3dH" x="468" y="84" fill="#78350F">You asked for the formula</text>
+        <text class="o3dM" x="468" y="116">=AVERAGE(monthly_rev)</text>
+        <text class="o3dB" x="468" y="142">The derivation sits in the cell</text>
+        <text class="o3dB" x="468" y="164">Same inputs, same answer, forever</text>
+        <text class="o3dF" x="468" y="200" fill="#78350F">One question and you point at it</text>
+        <text class="o3dN" x="60" y="276">Same figure either way. Only one of them can be defended in a meeting.</text>
+      </svg>
+      <figcaption>🔍 Click to zoom - asking for the formula costs no extra time and changes what the number is worth</figcaption>
+    </figure>
+
+    <div class="tryrow" data-fn="formula" data-title="A real formula, evaluated in your browser" data-hint="=SUM(jan:jun)/6" data-seed="=SUM(jan:jun)/6" data-cta="Run the formula" data-foot="Six months of demo revenue live behind this box. Change the formula and watch the substitution line."></div>
+
+    <p>Look at the second metric it returns, the one labelled "after substitution". That is what showing your working means in practice: not the result, but the arithmetic the result came from, laid out so a colleague can disagree with it.</p>
+
+    <div class="hotspot" data-title="Four places to look, and only one of them is the answer">
+      <div class="hs-mock">
+        <svg viewBox="0 0 880 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A spreadsheet window showing the name box holding a named range, the formula bar holding the derivation, a cell holding the result, and an assistant pane on the right">
+          <style>
+            .o3eT { font: 700 12px Inter, sans-serif; fill: #1C1917; }
+            .o3eM { font: 400 11px "SF Mono", ui-monospace, Menlo, monospace; fill: #1C1917; }
+            .o3eH { font: 700 11px Inter, sans-serif; fill: #6B6257; }
+            .o3eC { font: 400 11px Inter, sans-serif; fill: #1C1917; }
+            .o3eP { font: 400 11px Inter, sans-serif; fill: #062A43; }
+          </style>
+          <rect x="20" y="20" width="840" height="340" rx="10" fill="#fff" stroke="#EAE4DB" stroke-width="1.5"/>
+          <rect x="20" y="20" width="840" height="34" rx="10" fill="#FFFBEB"/><text class="o3eT" x="40" y="42">Q3-revenue.xlsx</text>
+          <rect x="36" y="66" width="130" height="26" rx="4" fill="#fff" stroke="#B45309" stroke-width="1.5"/><text class="o3eM" x="46" y="84">monthly_rev</text>
+          <rect x="174" y="66" width="440" height="26" rx="4" fill="#fff" stroke="#B45309" stroke-width="1.5"/><text class="o3eM" x="184" y="84">=AVERAGE(monthly_rev)</text>
+          <rect x="36" y="106" width="560" height="24" fill="#FFFBEB"/>
+          <text class="o3eH" x="46" y="123">Month</text><text class="o3eH" x="186" y="123">Revenue</text><text class="o3eH" x="326" y="123">Average</text><text class="o3eH" x="466" y="123">Note</text>
+          <text class="o3eC" x="46" y="151">Jan</text><text class="o3eC" x="186" y="151">41,200</text><text class="o3eC" x="46" y="179">Feb</text><text class="o3eC" x="186" y="179">38,750</text>
+          <text class="o3eC" x="46" y="207">Mar</text><text class="o3eC" x="186" y="207">46,900</text><text class="o3eC" x="46" y="235">Apr</text><text class="o3eC" x="186" y="235">44,100</text>
+          <text class="o3eC" x="46" y="263">May</text><text class="o3eC" x="186" y="263">51,300</text><text class="o3eC" x="46" y="291">Jun</text><text class="o3eC" x="186" y="291">48,600</text>
+          <rect x="316" y="134" width="140" height="26" fill="#FCD34D"/><text class="o3eC" x="326" y="152">45,142</text><text class="o3eC" x="466" y="152">H1 average</text>
+          <line x1="36" y1="134" x2="596" y2="134" stroke="#EAE4DB"/><line x1="36" y1="190" x2="596" y2="190" stroke="#EAE4DB"/><line x1="36" y1="246" x2="596" y2="246" stroke="#EAE4DB"/><line x1="36" y1="302" x2="596" y2="302" stroke="#EAE4DB"/>
+          <rect x="620" y="106" width="222" height="230" rx="8" fill="#E8F3FA" stroke="#0369A1" stroke-width="1.5"/><text class="o3eT" x="634" y="130" fill="#062A43">Assistant</text>
+          <text class="o3eP" x="634" y="156">"Give me the formula for</text><text class="o3eP" x="634" y="174">the H1 average, using the</text>
+          <text class="o3eP" x="634" y="192">named range. Do not give</text><text class="o3eP" x="634" y="210">me the number."</text>
+          <text class="o3eP" x="634" y="244">It writes the formula into</text><text class="o3eP" x="634" y="262">the cell. You read it in</text>
+          <text class="o3eP" x="634" y="280">the bar above, not here.</text>
+        </svg>
+      </div>
+      <button class="hs-pin" style="--x:11.5%;--y:21%" data-title="The name box" data-cap="Name the range before you ask. An unnamed block is what makes it guess which rows you meant."></button>
+      <button class="hs-pin" style="--x:34%;--y:21%" data-title="The formula bar" data-cap="This is the line you should actually be reading. It is the only place the derivation is visible."></button>
+      <button class="hs-pin" style="--x:44%;--y:39%" data-title="The result cell" data-cap="The number everyone looks at. On its own it tells you nothing about whether it is right."></button>
+      <button class="hs-pin" style="--x:83%;--y:58%" data-title="The assistant pane" data-cap="Ask here, and ask for a formula. An answer typed into this pane leaves no trail in the workbook."></button>
+    </div>
+
+    <div class="steps">
+      <div class="step"><p><strong>Name the range first.</strong> Select the block, give it a name a human would recognise: monthly_rev, headcount_q3, churned_accounts. Thirty seconds, and it removes most of the guessing about which rows you meant.</p></div>
+      <div class="step"><p><strong>Ask for the formula, explicitly.</strong> "Give me the formula for the H1 average using the named range monthly_rev. Do not give me the number." That last sentence is the whole session. Say it out loud as you type it.</p></div>
+      <div class="step"><p><strong>Read the formula before you accept it.</strong> Does it point at the range you meant? Does it include the header row by mistake? Does it quietly average six months when your report covers five? This is a ten-second read and it catches the majority of what goes wrong.</p></div>
+      <div class="step"><p><strong>Put the working next to the number.</strong> A small note column, or a comment: "H1 average, six months, excludes the Frankfurt correction". Your future self is the main beneficiary and your future self has forgotten everything.</p></div>
+      <div class="step"><p><strong>Spot-check two figures by hand.</strong> Not all of them, two. Pick the largest number in the report and one chosen at random, and recompute them yourself on paper or a calculator. Four minutes. Do it every week and you will find something roughly once a quarter.</p></div>
+      <div class="step"><p><strong>Find any AI cell function hiding in your workbook.</strong> If a colleague has put one in a numeric column, that is the moment to share the vendor documentation rather than an opinion. "Their own page says not for numerical calculations" ends the argument politely.</p></div>
+      <div class="step"><p><strong>Write down what your check cost.</strong> Minutes spent checking, and anything you found. You will need this in session 5, where the whole report gets assembled and every figure has to be traceable.</p></div>
+    </div>
+
+    <div class="tryrow" data-fn="formula" data-title="Spot-check practice: recompute the spread by hand first" data-hint="=MAX(jan:jun)-MIN(jan:jun)" data-seed="=MAX(jan:jun)-MIN(jan:jun)" data-cta="Check my arithmetic" data-foot="Work it out in your head before you press the button. That habit is the whole spot-check discipline."></div>
+
+    <div class="stakes" data-base="137" data-unit="min/week" data-lower-is-better="1" data-title="Your report after session 2, in minutes" data-foot="These three switches are the session 3 rung: 137 minutes down to 128, or 26 percent to 31 percent.">
+      <label><input type="checkbox" data-delta="-5"> You ask for the formula rather than the answer</label>
+      <label><input type="checkbox" data-delta="-3"> The working sits beside the number, in the sheet</label>
+      <label><input type="checkbox" data-delta="-1"> You name the range before you ask</label>
+      <label><input type="checkbox" data-delta="19" data-trap="1"> An AI cell function produces a total, and returns a different one next quarter</label>
+    </div>
+
+    <div class="callout tip">
+      <p><strong>The cost of one wrong figure.</strong> The trap above is not a scold, it is arithmetic. A wrong number in a report that goes upward does not cost you the minutes to fix it. It costs the meeting where it is questioned, the rebuild, the corrected version you have to send round, and the small permanent tax on how carefully everyone reads your next one. Four minutes of spot-checking is cheap against that.</p>
+    </div>
+
+    <div class="scorecard" data-title="Halfway scorecard: your report so far" data-foot="Three sessions in. Anything scoring 0 is what session 5 is for, so mark it honestly.">
+      <div class="sc-row"><div class="sc-q">Every figure in it traces to a source you can open
+        <em>Not "it looked right" - you can point at the cell.</em></div></div>
+      <div class="sc-row"><div class="sc-q">Your ask carries material, reader, shape and an honesty clause
+        <em>All four, every time, not the ones you remember on the day.</em></div></div>
+      <div class="sc-row"><div class="sc-q">You ask for slices of a long document, never the whole thing
+        <em>And you write your five must-haves before you read the answer.</em></div></div>
+      <div class="sc-row"><div class="sc-q">The derivation of your headline number is visible in the sheet
+        <em>A formula in a cell, not a total that arrived from somewhere.</em></div></div>
+      <div class="sc-row"><div class="sc-q">You spot-check two figures by hand before it goes out
+        <em>Every week, not the weeks you happen to feel nervous.</em></div></div>
+    </div>
+  </section>
+
+  <!-- ============ HOMEWORK ============ -->
+  <section class="section" id="exercise">
+    <div class="section-kicker">
+      <span class="klabel">Homework</span>
+      <h2>Before session 4</h2>
+      <span class="tag exercise">20 min</span>
+    </div>
+    <ol>
+      <li><strong>Name three ranges in your real workbook.</strong> The three you refer to most. This is the cheapest quality improvement in the whole course and it helps you as much as it helps the assistant.</li>
+      <li><strong>Rebuild one more figure so the formula is visible.</strong> Ask for the formula, read it, put it in the cell, and write one line beside it saying what it excludes.</li>
+      <li><strong>Run the spot-check once, properly.</strong> Two figures, by hand, before the report goes out. Note how long it took and whether you found anything.</li>
+      <li><strong>Check your edition and your platform.</strong> Whether you have the Sheets AI function at all, and whether the machine you use on a Friday afternoon is one where edit mode works. Better to find out now than mid-report.</li>
+      <li><strong>Bring one email thread to session 4.</strong> A long one, the kind you have to summarise for somebody. And bring an honest opinion on how you would feel if you learned a colleague's warm message to you had been drafted by an assistant. Session 4 has a study about exactly that.</li>
+    </ol>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="section" id="quiz">
+    <div class="section-kicker">
+      <span class="klabel">Check yourself</span>
+      <h2>Three questions</h2>
+    </div>
+    <p>Clear all three and session 3 gets stamped in your passport.</p>
+
+    <div class="quiz-q" data-answer="2">
+      <p class="qtext">1 · According to Microsoft's own documentation, what should you avoid using =COPILOT() for?</p>
+      <button class="qopt" type="button">A · Categorising free-text feedback in a column</button>
+      <button class="qopt" type="button">B · Drafting a short comment beside a row</button>
+      <button class="qopt" type="button">C · Numerical calculations, lookups, and legal or compliance tasks</button>
+      <p class="qwhy">The function page says "COPILOT uses AI and can give incorrect responses", tells you to use native formulas "for any task requiring accuracy or reproducibility", points you at XLOOKUP for lookups, rules out legal, regulatory and compliance work, and warns that "Formula results may change over time, even with the same arguments".</p>
+    </div>
+
+    <div class="quiz-q" data-answer="1">
+      <p class="qtext">2 · Human experts scored 71.33 percent on SpreadsheetBench and Microsoft reports Agent Mode in Excel at 57.2 percent. What must you say when you quote them together?</p>
+      <button class="qopt" type="button">A · That the tool is 14 points worse than a person at spreadsheet work</button>
+      <button class="qopt" type="button">B · That the two figures come from two different evaluators, and that Microsoft evaluated its own product</button>
+      <button class="qopt" type="button">C · That the benchmark is unreliable and the numbers should be ignored</button>
+      <p class="qwhy">Both figures are real and useful for a sense of scale, and side by side they are not a head-to-head result. The honest takeaway is not "it is bad" but "it is good enough to look right most of the time", which is exactly the condition that makes a spot-check necessary.</p>
+    </div>
+
+    <div class="quiz-q" data-answer="0">
+      <p class="qtext">3 · Which of these is now out of date?</p>
+      <button class="qopt" type="button">A · "Copilot in Excel requires AutoSave to be on and the file to live in OneDrive"</button>
+      <button class="qopt" type="button">B · "Copilot's edit mode does not run on iPad, where you get chat mode only"</button>
+      <button class="qopt" type="button">C · "Gemini in Sheets works best on native Sheets files"</button>
+      <p class="qwhy">Microsoft now states that "Copilot in Excel runs in workbooks with autosave enabled or disabled". The other two are current. And the widely repeated "2 million cells" limit appears on no live Microsoft page, so this course teaches no number at all rather than a comfortable fake one.</p>
+    </div>
+
+    <p class="quiz-score"></p>
+  </section>
+
+  <!-- ============ OFFICIAL COVERAGE ============ -->
+  <section class="section" id="official">
+    <div class="section-kicker">
+      <span class="klabel">Sources covered</span>
+      <h2>What this session teaches, and where it came from</h2>
+    </div>
+    <div class="covered">
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Copilot in Excel, capabilities and platform limits</span><span class="note">Sheet and cell edits, conditional formatting, data validation, cross-sheet formulas, charts and PivotTables, web fetch with citations. Edit mode on Windows, Mac and web only, chat mode only on iPad and iPhone, Calculation Options set to Automatic</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">The =COPILOT() function reference</span><span class="note">Its own list of what to avoid: numerical calculations, lookups, legal and compliance. 100 calculations per 10 minutes, no view of the rest of the workbook, results may change over time</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Gemini in Sheets and the =AI() function</span><span class="note">Tables, formulas, analysis, charts, pivots, dropdowns, sort and filter, whole-sheet builds you approve. Text only, first 350 selected cells per batch, no whole-spreadsheet view, cannot nest in IF, cannot be undone</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">SpreadsheetBench and Microsoft's Agent Mode figure</span><span class="note">Human experts 71.33 percent, Agent Mode in Excel 57.2 percent on the full task set. The two-evaluator caveat is taught as part of the number, not as a footnote</span></div>
+      <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Stale advice actively corrected</span><span class="note">The AutoSave and OneDrive requirement is gone by Microsoft's own wording. The "2 million cells" limit is on no live page, so no number is taught</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Agent Mode, Analyst and Claude for Excel</span><span class="note">Named with their real availability limits and model details. Deep use of the Frontier early-access features stays with the vendors</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Workspace edition caps</span><span class="note">Business Starter has no access, Standard 5,000 AI-function calls a month, Plus 25,000. Admin configuration is pointed at, not taught</span></div>
+    </div>
+    <p class="mono" style="margin-top:14px">Full source map with every URL: <span class="mono">materials/official-course-map.md</span> in this repo. Certificates, videos and assessments stay with the official providers.</p>
+  </section>
+
+  <!-- ============ CHEAT SHEET ============ -->
+  <section class="cheat" id="cheatsheet">
+    <h3>Session 3 cheat sheet <span>· pin this</span></h3>
+    <div class="grid-2">
+      <div class="cheat-item"><b>The whole session in one line</b><span>A number you cannot derive is a number you cannot defend. Ask for the formula, not the answer.</span></div>
+      <div class="cheat-item"><b>What the vendor forbids</b><span>=COPILOT() is not for calculations, lookups, or compliance. Use SUM, XLOOKUP, native math.</span></div>
+      <div class="cheat-item"><b>The stability problem</b><span>"Formula results may change over time, even with the same arguments." A spreadsheet should not do that.</span></div>
+      <div class="cheat-item"><b>=AI() limits</b><span>Text only, first 350 cells per batch, no whole-sheet view, cannot nest in IF, cannot be undone.</span></div>
+      <div class="cheat-item"><b>The accuracy figures</b><span>Human experts 71.33%, Agent Mode 57.2%. Different evaluators, and Microsoft graded itself.</span></div>
+      <div class="cheat-item"><b>The four-minute habit</b><span>Name the range, read the formula, spot-check two figures by hand. Every week, not every crisis.</span></div>
+    </div>
+  </section>
+
+  <div class="callout next">
+    <span class="nx-pill">Next session</span>
+    <p>Your numbers are defensible and your written half is audited. What is still eating the afternoon is everything upstream: the thread you have to read before you can write anything, and the meeting whose notes never arrived. Session 4 goes there, and it opens with a study of 1,100 professionals on what happens to your trustworthiness when people find out an assistant wrote the warm part.</p>
+  </div>
+
+  <footer class="pagefoot">
+    <span>Session 3 of 6 · learn-ai-office-with-phoebe · by Phoebe Fu &nbsp;·&nbsp; 📚 <a href="https://phoebefu6.github.io/learn-with-phoebe/">Learn with Phoebe ↗</a></span>
+    <span><a href="02-documents.html">← Previous: Documents</a> &nbsp;·&nbsp; <a href="04-inbox-and-meetings.html">Next: Inbox and meetings →</a></span>
+  </footer>
+
+</main>
+
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>
