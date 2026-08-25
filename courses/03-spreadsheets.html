@@ -151,10 +151,8 @@
     <details class="card">
       <summary><span class="mode self">Self-study</span>Two more surfaces worth knowing exist<span class="mini">3 min</span><span class="caret">▶</span></summary>
       <div class="body">
-        <p><strong>Agent Mode</strong> in Word, Excel and PowerPoint went generally available on 22 April 2026 and does multi-step actions in place, on desktop and mobile. A detail worth carrying because it surprises people: Agent Mode runs on OpenAI reasoning models, while Office Agent runs on Anthropic models. Same menu, different engines underneath.</p>
-        <p>The <strong>Analyst</strong> agent, currently in the early-access Frontier program, "can run Python ... and you can view the code it's running in real time". Read that capability through tonight's lens. The valuable half of that sentence is not the Python. It is that you can watch the code, which is exactly the show-your-working principle, shipped as a product feature.</p>
-        <p>And on the Anthropic side, <strong>Claude for Excel</strong> does workbook question and answer with cell-level citations and can adjust assumptions while keeping formula relationships intact. It needs Pro, Max, Team or Enterprise, runs on web plus recent Windows and Mac builds, and is <strong>not</strong> available on the 2016 or 2019 perpetual versions, on iPad, or on Android. Data tables and macros are unsupported.</p>
-        <p>Cell-level citations are the same idea again, from a third vendor. When three companies independently ship "here is where this came from", that is the market agreeing with the thesis of this session.</p>
+        <p><strong>Agent Mode</strong> in Word, Excel and PowerPoint went generally available on 22 April 2026 and does multi-step actions in place, on desktop and mobile. A detail worth carrying because it surprises people: Agent Mode runs on OpenAI reasoning models, while Office Agent runs on Anthropic models. Same menu, different engines underneath. The <strong>Analyst</strong> agent, currently in the early-access Frontier program, "can run Python ... and you can view the code it's running in real time". Read that through tonight's lens: the valuable half of that sentence is not the Python, it is that you can watch the code.</p>
+        <p>On the Anthropic side, <strong>Claude for Excel</strong> does workbook question and answer with cell-level citations and can adjust assumptions while keeping formula relationships intact. It needs Pro, Max, Team or Enterprise, runs on web plus recent Windows and Mac builds, and is <strong>not</strong> available on the 2016 or 2019 perpetual versions, on iPad, or on Android. Data tables and macros are unsupported. Cell-level citations are the same idea again, from a third vendor: when three companies independently ship "here is where this came from", that is the market agreeing with the thesis of this session.</p>
       </div>
     </details>
   </section>
@@ -275,8 +273,7 @@ And for the flag, plain logic beats a prompt every time:
         <text class="o3cL" x="240" y="170" text-anchor="end">Agent Mode in Excel</text>
         <rect x="260" y="150" width="320" height="34" rx="6" fill="#0369A1"/>
         <text class="o3cV" x="274" y="172">57.2%</text>
-        <text class="o3cS" x="260" y="212">SpreadsheetBench, full task set. The bar above is the ceiling humans hit.</text>
-        <text class="o3cS" x="260" y="234">Neither figure is a pass mark. Both leave plenty of room to be wrong.</text>
+        <text class="o3cS" x="260" y="216">SpreadsheetBench, full task set. Neither figure is a pass mark.</text>
         <text class="o3cN" x="60" y="276">Two different evaluators, and Microsoft evaluated its own product. Read the gap, not a ranking.</text>
       </svg>
       <figcaption>🔍 Click to zoom - good enough to be genuinely useful, and good enough to be dangerous unchecked</figcaption>
@@ -333,14 +330,12 @@ And for the flag, plain logic beats a prompt every time:
         </style>
         <rect x="40" y="50" width="390" height="180" rx="12" fill="#FEF2F2" stroke="#FCA5A5" stroke-width="1.5"/>
         <text class="o3dH" x="58" y="84" fill="#991B1B">You asked for the answer</text>
-        <text class="o3dM" x="58" y="116">45,142</text>
-        <text class="o3dB" x="58" y="142">No cells named, no trail, no formula</text>
+        <text class="o3dM" x="58" y="116">45,142</text><text class="o3dB" x="58" y="142">No cells named, no trail, no formula</text>
         <text class="o3dB" x="58" y="164">In March you cannot reproduce it</text>
         <text class="o3dF" x="58" y="200" fill="#991B1B">One question and you are scrolling</text>
         <rect x="450" y="50" width="390" height="180" rx="12" fill="#FFFBEB" stroke="#B45309" stroke-width="1.5"/>
         <text class="o3dH" x="468" y="84" fill="#78350F">You asked for the formula</text>
-        <text class="o3dM" x="468" y="116">=AVERAGE(monthly_rev)</text>
-        <text class="o3dB" x="468" y="142">The derivation sits in the cell</text>
+        <text class="o3dM" x="468" y="116">=AVERAGE(monthly_rev)</text><text class="o3dB" x="468" y="142">The derivation sits in the cell</text>
         <text class="o3dB" x="468" y="164">Same inputs, same answer, forever</text>
         <text class="o3dF" x="468" y="200" fill="#78350F">One question and you point at it</text>
         <text class="o3dN" x="60" y="276">Same figure either way. Only one of them can be defended in a meeting.</text>
@@ -392,8 +387,7 @@ And for the flag, plain logic beats a prompt every time:
       <div class="step"><p><strong>Read the formula before you accept it.</strong> Does it point at the range you meant? Does it include the header row by mistake? Does it quietly average six months when your report covers five? This is a ten-second read and it catches the majority of what goes wrong.</p></div>
       <div class="step"><p><strong>Put the working next to the number.</strong> A small note column, or a comment: "H1 average, six months, excludes the Frankfurt correction". Your future self is the main beneficiary and your future self has forgotten everything.</p></div>
       <div class="step"><p><strong>Spot-check two figures by hand.</strong> Not all of them, two. Pick the largest number in the report and one chosen at random, and recompute them yourself on paper or a calculator. Four minutes. Do it every week and you will find something roughly once a quarter.</p></div>
-      <div class="step"><p><strong>Find any AI cell function hiding in your workbook.</strong> If a colleague has put one in a numeric column, that is the moment to share the vendor documentation rather than an opinion. "Their own page says not for numerical calculations" ends the argument politely.</p></div>
-      <div class="step"><p><strong>Write down what your check cost.</strong> Minutes spent checking, and anything you found. You will need this in session 5, where the whole report gets assembled and every figure has to be traceable.</p></div>
+      <div class="step"><p><strong>Find any AI cell function hiding in your workbook, and write down what your check cost.</strong> If a colleague has put one in a numeric column, share the vendor documentation rather than an opinion: "their own page says not for numerical calculations" ends the argument politely. Then note the minutes you spent checking and anything you found, because session 5 needs both.</p></div>
     </div>
 
     <div class="tryrow" data-fn="formula" data-title="Spot-check practice: recompute the spread by hand first" data-hint="=MAX(jan:jun)-MIN(jan:jun)" data-seed="=MAX(jan:jun)-MIN(jan:jun)" data-cta="Check my arithmetic" data-foot="Work it out in your head before you press the button. That habit is the whole spot-check discipline."></div>
@@ -486,8 +480,7 @@ And for the flag, plain logic beats a prompt every time:
       <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Gemini in Sheets and the =AI() function</span><span class="note">Tables, formulas, analysis, charts, pivots, dropdowns, sort and filter, whole-sheet builds you approve. Text only, first 350 selected cells per batch, no whole-spreadsheet view, cannot nest in IF, cannot be undone</span></div>
       <div class="covered-row"><span class="status pill solid">✓</span><span class="name">SpreadsheetBench and Microsoft's Agent Mode figure</span><span class="note">Human experts 71.33 percent, Agent Mode in Excel 57.2 percent on the full task set. The two-evaluator caveat is taught as part of the number, not as a footnote</span></div>
       <div class="covered-row"><span class="status pill solid">✓</span><span class="name">Stale advice actively corrected</span><span class="note">The AutoSave and OneDrive requirement is gone by Microsoft's own wording. The "2 million cells" limit is on no live page, so no number is taught</span></div>
-      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Agent Mode, Analyst and Claude for Excel</span><span class="note">Named with their real availability limits and model details. Deep use of the Frontier early-access features stays with the vendors</span></div>
-      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Workspace edition caps</span><span class="note">Business Starter has no access, Standard 5,000 AI-function calls a month, Plus 25,000. Admin configuration is pointed at, not taught</span></div>
+      <div class="covered-row"><span class="status pill light">◐</span><span class="name">Agent Mode, Analyst, Claude for Excel, edition caps</span><span class="note">Named with their real availability limits and model details, plus Business Starter having no access, Standard 5,000 AI-function calls a month and Plus 25,000. Frontier early-access depth and admin configuration stay with the vendors</span></div>
     </div>
     <p class="mono" style="margin-top:14px">Full source map with every URL: <span class="mono">materials/official-course-map.md</span> in this repo. Certificates, videos and assessments stay with the official providers.</p>
   </section>

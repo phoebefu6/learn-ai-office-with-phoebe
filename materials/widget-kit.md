@@ -109,9 +109,16 @@ cost, defects). Mark a trap option with `data-trap="1"` - it tints red when swit
 The trap must be honest arithmetic, not a scold: skipping review costs rework minutes, and the
 number has to show that.
 
-## 6. `.scorecard` - halfway self-grade
+## 6. `.scorecard` - self-grade against criteria
 
-Session 3 only, one per course, five rows. Buttons 0 / 1 / 2 are generated.
+Two per course, and they do different jobs. Do not merge them.
+
+- **Session 3, the halfway scorecard.** Grades the artifact mid-build, when it is meant to be
+  half-finished. Its message copy is forgiving on purpose.
+- **The last session, the final scorecard.** Grades the finished artifact as a ship-or-not gate.
+  Its rows are the things that would embarrass you if they were wrong.
+
+Five rows each, and the two sets must not overlap. Buttons 0 / 1 / 2 are generated.
 
 ```html
 <div class="scorecard" data-title="Halfway scorecard: your report so far">
@@ -121,22 +128,3 @@ Session 3 only, one per course, five rows. Buttons 0 / 1 / 2 are generated.
 </div>
 ```
 
-## 7. Passport - automatic, do not hand-write
-
-Clearing all three quiz questions stamps the session. A `🎫 Passport N/6` pill appears in the
-toolbar on every session page. On `index.html` add an empty `<div class="pp-strip"></div>` inside
-a section and the six stamps render into it. `window.LWP_PASSPORT.count()` is what a simulator
-reads to gate its locked top rung.
-
-## 8. Cliffhanger - the last thing on every session page
-
-Not a widget, just a callout. Every session ends with one, naming the payoff of the next session
-rather than its topic. Session 6 names what the learner now owns instead.
-
-```html
-<div class="callout next">
-  <span class="nx-pill">Next session</span>
-  <p>Your report still takes you a full afternoon. Session 5 assembles the whole thing in
-     one pass, and the number in the meter drops below 60 for the first time.</p>
-</div>
-```
