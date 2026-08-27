@@ -1311,3 +1311,28 @@ figure.zoomable.can-scroll figcaption::after {
 .agenda .a2 { background: var(--indigo-mid); color: var(--ink); }
 .agenda .a3 { background: var(--amber); color: #fff; }
 .agenda .a4 { background: var(--indigo-soft); color: var(--ink); }
+
+
+/* ---------- mono, and the warn callout ---------- */
+/* Added 2026-08-26. Both were used in markup with no rule anywhere in the
+   estate: .mono appeared in 126 places across this batch and in zero
+   stylesheets, and .callout.warn inherited only padding and radius from the
+   base .callout, which sets no background, so warnings rendered as plain
+   indented paragraphs. .mono needs two rules because it is used both as a
+   block footer note and as inline code. */
+.mono {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: .86em;
+}
+
+p.mono { color: var(--muted); }
+
+span.mono {
+  background: var(--paper);
+  border: 1px solid var(--hairline);
+  border-radius: 5px;
+  padding: .08em .34em;
+  white-space: nowrap;
+}
+
+.callout.warn { background: #FEF2F2; border-left: 4px solid #B91C1C; }
